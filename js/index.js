@@ -67,10 +67,12 @@ firebase
 function sendMessage() {
   const msgInput = document.getElementById("msgInput");
 
-  firebase.database().ref("messages").push().set({
-    sender: myName,
-    message: msgInput.value,
-  });
+  if (msgInput.value) {
+    firebase.database().ref("messages").push().set({
+      sender: myName,
+      message: msgInput.value,
+    });
+  }
 
   msgInput.value = "";
 }

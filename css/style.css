@@ -126,7 +126,7 @@ Messages
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   color: rgba(255, 255, 255, 0.5);
-  overflow: hidden;
+  overflow-x: hidden;
   position: relative;
   width: 100%;
 }
